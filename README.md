@@ -21,7 +21,7 @@ Make sure you have all of the following setup before walking through the demo ap
 
 
 ## Pet-Adop Demo App
-This is the most basic demo app. It is written in Objective-C and contains only activation of a basic experiment and tracking a conversion event. Open the README.md for the Pet-Adopt Demo App for more information.
+This is the most basic demo app. It is written in Objective-C and contains only activation of a basic experiment and tracking a conversion event. Read the README.md in the [Pet-Adopt Demo App](https://github.com/optimizely/tvOS-demo/tree/master/Pet-Adopt) for more information.
 
 
 ## Getting Help!
