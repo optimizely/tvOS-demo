@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA42A241D6F7CA800EEF598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A231D6F7CA800EEF598 /* main.m */; };
+		2DA42A271D6F7CA800EEF598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A261D6F7CA800EEF598 /* AppDelegate.m */; };
+		2DA42A2A1D6F7CA800EEF598 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A291D6F7CA800EEF598 /* ViewController.m */; };
+		2DA42A2D1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A2B1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodeld */; };
+		2DA42A301D6F7CA800EEF598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA42A2E1D6F7CA800EEF598 /* Main.storyboard */; };
+		2DA42A321D6F7CA800EEF598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA42A311D6F7CA800EEF598 /* Assets.xcassets */; };
+		2DA42A3D1D6F7CA800EEF598 /* Pet_AdoptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A3C1D6F7CA800EEF598 /* Pet_AdoptTests.m */; };
+		2DA42A481D6F7CA800EEF598 /* Pet_AdoptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA42A471D6F7CA800EEF598 /* Pet_AdoptUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DA42A391D6F7CA800EEF598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA42A171D6F7CA700EEF598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA42A1E1D6F7CA700EEF598;
+			remoteInfo = "Pet-Adopt";
+		};
+		2DA42A441D6F7CA800EEF598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA42A171D6F7CA700EEF598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA42A1E1D6F7CA700EEF598;
+			remoteInfo = "Pet-Adopt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DA42A1F1D6F7CA700EEF598 /* Pet-Adopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet-Adopt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA42A231D6F7CA800EEF598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DA42A251D6F7CA800EEF598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DA42A261D6F7CA800EEF598 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DA42A281D6F7CA800EEF598 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DA42A291D6F7CA800EEF598 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DA42A2C1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pet_Adopt.xcdatamodel; sourceTree = "<group>"; };
+		2DA42A2F1D6F7CA800EEF598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA42A311D6F7CA800EEF598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA42A331D6F7CA800EEF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA42A381D6F7CA800EEF598 /* Pet-AdoptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-AdoptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA42A3C1D6F7CA800EEF598 /* Pet_AdoptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet_AdoptTests.m; sourceTree = "<group>"; };
+		2DA42A3E1D6F7CA800EEF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA42A431D6F7CA800EEF598 /* Pet-AdoptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-AdoptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA42A471D6F7CA800EEF598 /* Pet_AdoptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet_AdoptUITests.m; sourceTree = "<group>"; };
+		2DA42A491D6F7CA800EEF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA42A1C1D6F7CA700EEF598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A351D6F7CA800EEF598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A401D6F7CA800EEF598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA42A161D6F7CA700EEF598 = {
+			isa = PBXGroup;
+			children = (
+				2DA42A211D6F7CA800EEF598 /* Pet-Adopt */,
+				2DA42A3B1D6F7CA800EEF598 /* Pet-AdoptTests */,
+				2DA42A461D6F7CA800EEF598 /* Pet-AdoptUITests */,
+				2DA42A201D6F7CA700EEF598 /* Products */,
+				65D066FEE5FC6D0EAC4D78D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA42A201D6F7CA700EEF598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA42A1F1D6F7CA700EEF598 /* Pet-Adopt.app */,
+				2DA42A381D6F7CA800EEF598 /* Pet-AdoptTests.xctest */,
+				2DA42A431D6F7CA800EEF598 /* Pet-AdoptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA42A211D6F7CA800EEF598 /* Pet-Adopt */ = {
+			isa = PBXGroup;
+			children = (
+				2DA42A251D6F7CA800EEF598 /* AppDelegate.h */,
+				2DA42A261D6F7CA800EEF598 /* AppDelegate.m */,
+				2DA42A281D6F7CA800EEF598 /* ViewController.h */,
+				2DA42A291D6F7CA800EEF598 /* ViewController.m */,
+				2DA42A2E1D6F7CA800EEF598 /* Main.storyboard */,
+				2DA42A311D6F7CA800EEF598 /* Assets.xcassets */,
+				2DA42A331D6F7CA800EEF598 /* Info.plist */,
+				2DA42A2B1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodeld */,
+				2DA42A221D6F7CA800EEF598 /* Supporting Files */,
+			);
+			path = "Pet-Adopt";
+			sourceTree = "<group>";
+		};
+		2DA42A221D6F7CA800EEF598 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA42A231D6F7CA800EEF598 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DA42A3B1D6F7CA800EEF598 /* Pet-AdoptTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DA42A3C1D6F7CA800EEF598 /* Pet_AdoptTests.m */,
+				2DA42A3E1D6F7CA800EEF598 /* Info.plist */,
+			);
+			path = "Pet-AdoptTests";
+			sourceTree = "<group>";
+		};
+		2DA42A461D6F7CA800EEF598 /* Pet-AdoptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DA42A471D6F7CA800EEF598 /* Pet_AdoptUITests.m */,
+				2DA42A491D6F7CA800EEF598 /* Info.plist */,
+			);
+			path = "Pet-AdoptUITests";
+			sourceTree = "<group>";
+		};
+		65D066FEE5FC6D0EAC4D78D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA42A1E1D6F7CA700EEF598 /* Pet-Adopt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA42A4C1D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-Adopt" */;
+			buildPhases = (
+				2DA42A1B1D6F7CA700EEF598 /* Sources */,
+				2DA42A1C1D6F7CA700EEF598 /* Frameworks */,
+				2DA42A1D1D6F7CA700EEF598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pet-Adopt";
+			productName = "Pet-Adopt";
+			productReference = 2DA42A1F1D6F7CA700EEF598 /* Pet-Adopt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DA42A371D6F7CA800EEF598 /* Pet-AdoptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA42A4F1D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-AdoptTests" */;
+			buildPhases = (
+				2DA42A341D6F7CA800EEF598 /* Sources */,
+				2DA42A351D6F7CA800EEF598 /* Frameworks */,
+				2DA42A361D6F7CA800EEF598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA42A3A1D6F7CA800EEF598 /* PBXTargetDependency */,
+			);
+			name = "Pet-AdoptTests";
+			productName = "Pet-AdoptTests";
+			productReference = 2DA42A381D6F7CA800EEF598 /* Pet-AdoptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DA42A421D6F7CA800EEF598 /* Pet-AdoptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA42A521D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-AdoptUITests" */;
+			buildPhases = (
+				2DA42A3F1D6F7CA800EEF598 /* Sources */,
+				2DA42A401D6F7CA800EEF598 /* Frameworks */,
+				2DA42A411D6F7CA800EEF598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA42A451D6F7CA800EEF598 /* PBXTargetDependency */,
+			);
+			name = "Pet-AdoptUITests";
+			productName = "Pet-AdoptUITests";
+			productReference = 2DA42A431D6F7CA800EEF598 /* Pet-AdoptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA42A171D6F7CA700EEF598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wangjoshuah;
+				TargetAttributes = {
+					2DA42A1E1D6F7CA700EEF598 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2DA42A371D6F7CA800EEF598 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2DA42A1E1D6F7CA700EEF598;
+					};
+					2DA42A421D6F7CA800EEF598 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2DA42A1E1D6F7CA700EEF598;
+					};
+				};
+			};
+			buildConfigurationList = 2DA42A1A1D6F7CA700EEF598 /* Build configuration list for PBXProject "Pet-Adopt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA42A161D6F7CA700EEF598;
+			productRefGroup = 2DA42A201D6F7CA700EEF598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA42A1E1D6F7CA700EEF598 /* Pet-Adopt */,
+				2DA42A371D6F7CA800EEF598 /* Pet-AdoptTests */,
+				2DA42A421D6F7CA800EEF598 /* Pet-AdoptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA42A1D1D6F7CA700EEF598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA42A321D6F7CA800EEF598 /* Assets.xcassets in Resources */,
+				2DA42A301D6F7CA800EEF598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A361D6F7CA800EEF598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A411D6F7CA800EEF598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA42A1B1D6F7CA700EEF598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA42A2A1D6F7CA800EEF598 /* ViewController.m in Sources */,
+				2DA42A271D6F7CA800EEF598 /* AppDelegate.m in Sources */,
+				2DA42A2D1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodeld in Sources */,
+				2DA42A241D6F7CA800EEF598 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A341D6F7CA800EEF598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA42A3D1D6F7CA800EEF598 /* Pet_AdoptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA42A3F1D6F7CA800EEF598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA42A481D6F7CA800EEF598 /* Pet_AdoptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DA42A3A1D6F7CA800EEF598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA42A1E1D6F7CA700EEF598 /* Pet-Adopt */;
+			targetProxy = 2DA42A391D6F7CA800EEF598 /* PBXContainerItemProxy */;
+		};
+		2DA42A451D6F7CA800EEF598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA42A1E1D6F7CA700EEF598 /* Pet-Adopt */;
+			targetProxy = 2DA42A441D6F7CA800EEF598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DA42A2E1D6F7CA800EEF598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA42A2F1D6F7CA800EEF598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA42A4A1D6F7CA800EEF598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2DA42A4B1D6F7CA800EEF598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA42A4D1D6F7CA800EEF598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Pet-Adopt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-Adopt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DA42A4E1D6F7CA800EEF598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Pet-Adopt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-Adopt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DA42A501D6F7CA800EEF598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pet-AdoptTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-AdoptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-Adopt.app/Pet-Adopt";
+			};
+			name = Debug;
+		};
+		2DA42A511D6F7CA800EEF598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pet-AdoptTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-AdoptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-Adopt.app/Pet-Adopt";
+			};
+			name = Release;
+		};
+		2DA42A531D6F7CA800EEF598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pet-AdoptUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-AdoptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pet-Adopt";
+			};
+			name = Debug;
+		};
+		2DA42A541D6F7CA800EEF598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pet-AdoptUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-AdoptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pet-Adopt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA42A1A1D6F7CA700EEF598 /* Build configuration list for PBXProject "Pet-Adopt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA42A4A1D6F7CA800EEF598 /* Debug */,
+				2DA42A4B1D6F7CA800EEF598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA42A4C1D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-Adopt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA42A4D1D6F7CA800EEF598 /* Debug */,
+				2DA42A4E1D6F7CA800EEF598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA42A4F1D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-AdoptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA42A501D6F7CA800EEF598 /* Debug */,
+				2DA42A511D6F7CA800EEF598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA42A521D6F7CA800EEF598 /* Build configuration list for PBXNativeTarget "Pet-AdoptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA42A531D6F7CA800EEF598 /* Debug */,
+				2DA42A541D6F7CA800EEF598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2DA42A2B1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2DA42A2C1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodel */,
+			);
+			currentVersion = 2DA42A2C1D6F7CA800EEF598 /* Pet_Adopt.xcdatamodel */;
+			path = Pet_Adopt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2DA42A171D6F7CA700EEF598 /* Project object */;
+}
