@@ -7,7 +7,7 @@ The Optimizely tvOS SDK allows developers to experiment with tvOS apps. This SDK
 *  View the reference [documentation](http://developers.optimizely.com/server/reference/index.html)
 *  Latest [tvOS SDK]()
 
-## Pre-Requisites ##
+## Prerequisites ##
 Make sure you have all of the following setup before walking through the demo apps.
 
 1.  Make sure you have the latest macOS installed. Your macOS version must be at least OS X 10.11 El Capitan. If you are not at or above macOS 10.11 please [upgrade](http://www.apple.com/osx/how-to-upgrade/) now.
