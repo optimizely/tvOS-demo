@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 // Import Optimizely SDK
 /*
- #import <OptimizelySDKCore/OptimizelySDKCore.h>
+ #import <OptimizelySDKTVOS/OptimizelySDKTVOS.h>
  */
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
