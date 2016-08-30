@@ -18,12 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // delete cookies
-    //    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
-    //    for (NSHTTPCookie *cookie in cookies) {
-    //        [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
-    //    }
-    
     // Optimizely constants
     self.userId = [NSString stringWithFormat:@"%ul", arc4random()];
     self.projectId = @"";
@@ -36,9 +30,11 @@
     NSData *datafile = [NSData dataWithContentsOfURL:url];
     
     // Initialize default Optimizely
-    //    self.optimizely = [Optimizely initWithBuilderBlock:^(OPTLYBuilder *builder) {
-    //        builder.datafile = datafile;
-    //    }];
+    /*
+     self.optimizely = [Optimizely initWithBuilderBlock:^(OPTLYBuilder *builder) {
+     builder.datafile = datafile;
+     }];
+     */
     
     return YES;
 }
