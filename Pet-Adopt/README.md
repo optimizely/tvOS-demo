@@ -32,7 +32,7 @@ Using the instructions below, you will run the app locally and mimic bucketing u
 
 You can also follow these [instructions](http://developers.optimizely.com/server/getting-started/index.html?language=objectivec) for creating your first experiment. 
 
-### Setting Up Optimizely in the App ###
+### Running Optimizely in the App ###
 
 1.  Make sure you have either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) installed as a dependency manager.
 2.  If you are using CocoaPods as a dependency manager run `pod install` in the Pet-Adopt directory. 
@@ -49,8 +49,52 @@ You can also follow these [instructions](http://developers.optimizely.com/server
 4.  Delete the block comments around lines 13, and 29 in `AppDelegate.h`. This will import the Optimizely SDK into the app and allow you to keep a reference to Optimizely instance to be created.
 5.  Set your project ID on line 23 in `AppDelegate.m`. This will be used to download your project's datafile. 
 6.  Delete the block comments around lines 34-36 in `AppDelegate.m`. This will initialize the Optimizely SDK with the downloaded datafile.
-7.  Delete the block comments around lines 17-18, and 32-53 in `ViewController.m`. This will get the Optimizely instance from the App Delegate, activate the experiment, bucket the user into a variation, and run code specific to those variations. 
-8.  Run the app, and the simulated user should be bucketed into either the "Dogs" or "Cats" variation. 
-9.  Check the Optimizely results page in [app.optimizely.com](https://app.optimizely.com) to see that your app is counted as a visitor in the experiment.
+7.  Delete the block comments around lines 17-18, 32-53, and 67-68 in `ViewController.m`. This will get the Optimizely instance from the App Delegate, activate the experiment, bucket the user into a variation, run code specific to those variations, and clicks of the Adopt button as conversions of the Experiment. 
+8.  Run the app, and the simulated user should be bucketed into either the "Dogs" or "Cats" variation. Click the button if you want to adopt the pet.
+9.  Check the Optimizely results page in [app.optimizely.com](https://app.optimizely.com) to see that your app is counted as a visitor in the experiment. If you clicked the button, you should see a conversion in the "Adopt_Clicked" goal.
 
-Congratulations! You've just successfully run your first Optimizely experiment. In `AppDelegate.m` you downloaded the project datafile, passed it to the Optimizely Builder, and initialized an Optimizely instance with that datafile. In `ViewController.m`, you activated the base experiment, checked which variation the user was in, and showed the corresponding image for that variation. 
+Congratulations! You've just successfully run your first Optimizely experiment. In `AppDelegate.m` you downloaded the project datafile, passed it to the Optimizely Builder, and initialized an Optimizely instance with that datafile. In `ViewController.m`, you activated the base experiment, checked which variation the user was in, showed the corresponding image for that variation, and tracked conversions for the experiment. 
+
+### Usage ###
+
+To use the Optimizely tvOS SDK, you must first initialize it with the datafile. The `OPTLYBuilderBlock` uses an `OPTLYBuilder` object as the configuration of how to initialize the Optimizely instance. You can set many properties of the builder object, but you must always set the datafile to build an Optimizely instance. The datafile contains all the information about your Optimizely project (e.g. the status of an experiment and variation traffic allocation). After downloading the datafile, simply set it for the datafile property of the `OPTLYBuilder` object in the initialization of Optimizely.
+
+	NSData *datafile = [NSData dataWithContentsOfURL:url];
+    
+    Optimizely *optimizely = [Optimizely initWithBuilderBlock:^(OPTLYBuilder *builder) {
+        builder.datafile = datafile;
+    }];
+
+The key of experimenting with Optimizely is bucketing users into variations. Optimizely's `activateExperiment` function will bucket users into a variation based on the provided userId. Here is an example of how to activate an experiment to bucket the user, then execute different code based on the variation the user is bucketed into.
+
+	NSString *experimentKey = @"Your_Experiment_Key";
+	NSString *userId = @"some_user_id";
+	
+	// activate the experiment to bucket the user
+	OPTLYVariation *variation = [optimizely activateExperiment:experimentKey userId:userId];
+	
+	// check the variation the user is bucketed into to execute different code paths
+	if (variation != nil) {
+		if ([variation.variationKey isEqualToString:@"variationA"]) {
+			// execute code path for variation A
+		}
+		else if ([variation.variationKey isEqualToString:@"variationB"]) {
+			// execute code path for variation B
+		}
+	}
+	else {
+		// execute default code path
+	}
+	
+To determine which variation is better, you need to set some goals to track performance. The Optimizely tvOS SDK allows you to track these goals by sending events to the results page with the `trackEvent` call. To match the variation with the conversion event, you must pass the user ID when using the `trackEvent` call.
+
+	NSString *eventName = @"Your_Event_Name";
+	NSString *userId = @"some_user_id"
+	
+	[optimizely trackEvent:eventName userId:userId];
+	
+
+## Getting Help! ##
+
+*  Developer Docs: http://developers.optimizely.com/server/reference/index.html?language=objectivec
+*  Questions? Shoot us an email: [developers@optimizely.com](mailto:developers@optimizely.com) or use Live Chat on the server-side docs.
