@@ -2,6 +2,5 @@ platform :tvos, '9.0'
 use_frameworks!
 
 target 'Pet-Adopt' do
-	pod 'OptimizelySDKCore', :git => 'git@github.com:optimizely/objective-c-sdk.git', :branch => 'master'
-	pod 'OptimizelySDKTVOS', :git => 'git@github.com:optimizely/objective-c-sdk.git', :branch => 'master'
+	pod 'OptimizelySDKTVOS'
 end
