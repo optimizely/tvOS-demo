@@ -24,16 +24,28 @@
     self.experimentKey = @"Basic_Experiment";
     self.eventKey = @"Adopt_Clicked";
     
-    // Download your Datafile from the Optimizely CDN
-    NSString *cdnURL = [NSString stringWithFormat:@"https://cdn.optimizely.com/json/%@.json", _projectId];
-    NSURL *url = [NSURL URLWithString:cdnURL];
-    NSData *datafile = [NSData dataWithContentsOfURL:url];
-    
     // Initialize default Optimizely
-     self.optimizely = [Optimizely initWithBuilderBlock:^(OPTLYBuilder *builder) {
-         builder.datafile = datafile;
-         builder.logger = [[OPTLYLoggerDefault alloc] initWithLogLevel:OptimizelyLogLevelAll];
-     }];
+    self.optlyManager = [OPTLYManager initWithBuilderBlock:^(OPTLYManagerBuilder * _Nullable builder) {
+        builder.projectId = @"8031305992";
+        OPTLYLoggerDefault *logger =  [[OPTLYLoggerDefault alloc] initWithLogLevel:OptimizelyLogLevelAll];
+        builder.logger = logger;
+        builder.datafileManager = [OPTLYDatafileManagerDefault initWithBuilderBlock:^(OPTLYDatafileManagerBuilder * _Nullable builder) {
+            builder.datafileFetchInterval = 120;
+            builder.logger = logger;
+        }];
+        builder.eventDispatcher = [OPTLYEventDispatcherDefault initWithBuilderBlock:^(OPTLYEventDispatcherBuilder * _Nullable builder) {
+            builder.eventDispatcherDispatchTimeout = 10;
+            builder.eventDispatcherDispatchInterval = 10;
+            builder.logger = logger;
+        }];
+        builder.userProfile = [OPTLYUserProfileDefault initWithBuilderBlock:^(OPTLYUserProfileBuilder * _Nullable builder) {
+            builder.logger = logger;
+        }];
+    }];
+    
+    [self.optlyManager initializeClientWithCallback:^(NSError * _Nullable error, OPTLYClient * _Nullable client) {
+        
+    }];
     
     return YES;
 }

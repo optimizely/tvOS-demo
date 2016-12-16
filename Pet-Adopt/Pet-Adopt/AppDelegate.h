@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 // Import Optimizely SDK
-#import <OptimizelySDKCore/OptimizelySDKCore.h>
+#import <OptimizelySDKTVOS/OptimizelySDKTVOS.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,10 +20,10 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (strong, nonatomic) NSString *userId;
 @property (strong, nonatomic) NSString *projectId;
-@property (strong, nonatomic) NSString *experimentKey;
+@property (strong) NSString *experimentKey;
 @property (strong, nonatomic) NSString *eventKey;
 // Reference to your Optimizely instance
-@property (strong, nonatomic) Optimizely *optimizely;
+@property (strong, nonatomic) OPTLYManager *optlyManager;
 
 - (void)saveContext;
 - (NSURL *)applicationCachesDirectory;
