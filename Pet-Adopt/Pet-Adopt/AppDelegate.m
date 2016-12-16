@@ -20,7 +20,7 @@
     
     // Optimizely constants
     self.userId = [NSString stringWithFormat:@"%ul", arc4random()];
-    self.projectId = @"";
+    self.projectId = @"7763754376";
     self.experimentKey = @"Basic_Experiment";
     self.eventKey = @"Adopt_Clicked";
     
@@ -30,11 +30,10 @@
     NSData *datafile = [NSData dataWithContentsOfURL:url];
     
     // Initialize default Optimizely
-    /*
      self.optimizely = [Optimizely initWithBuilderBlock:^(OPTLYBuilder *builder) {
-     builder.datafile = datafile;
+         builder.datafile = datafile;
+         builder.logger = [[OPTLYLoggerDefault alloc] initWithLogLevel:OptimizelyLogLevelAll];
      }];
-     */
     
     return YES;
 }

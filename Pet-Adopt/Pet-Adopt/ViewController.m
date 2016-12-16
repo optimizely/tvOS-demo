@@ -13,10 +13,8 @@
 
 @property AppDelegate *appDelegate;
 // reference to your Application's Optimizely instance
-/*
  @property Optimizely *optimizely;
  @property OPTLYVariation *variation;
- */
 @end
 
 @implementation ViewController
@@ -28,7 +26,6 @@
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     // Activate the basic experiment and show either cats or dogs
-    /*
      self.optimizely = self.appDelegate.optimizely;
      
      self.variation = [self.optimizely activateExperiment:self.appDelegate.experimentKey
@@ -51,7 +48,6 @@
      else {
      // execute default code
      }
-     */
     
 }
 
@@ -63,10 +59,9 @@
 - (IBAction)adoptButtonClicked:(id)sender {
     NSLog(@"adopt button clicked");
     // Track a conversion event to the Optimizely results page
-    /*
      [self.optimizely trackEvent:self.appDelegate.eventKey
      userId:self.appDelegate.userId];
-     */
+     
 }
 
 @end

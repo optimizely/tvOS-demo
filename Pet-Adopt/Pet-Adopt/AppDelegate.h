@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 // Import Optimizely SDK
-/*
- #import <OptimizelySDKTVOS/OptimizelySDKTVOS.h>
- */
+#import <OptimizelySDKCore/OptimizelySDKCore.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -25,9 +23,7 @@
 @property (strong, nonatomic) NSString *experimentKey;
 @property (strong, nonatomic) NSString *eventKey;
 // Reference to your Optimizely instance
-/*
- @property (strong, nonatomic) Optimizely *optimizely;
- */
+@property (strong, nonatomic) Optimizely *optimizely;
 
 - (void)saveContext;
 - (NSURL *)applicationCachesDirectory;

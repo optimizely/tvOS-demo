@@ -1,0 +1,6 @@
+framework module Pods_Pet_Adopt {
+  umbrella header "Pods-Pet-Adopt-umbrella.h"
+
+  export *
+  module * { export * }
+}

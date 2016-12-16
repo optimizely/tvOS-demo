@@ -1,0 +1,54 @@
+PODS:
+  - JSONModel (1.3.0)
+  - OptimizelySDKCore (0.2.1):
+    - OptimizelySDKCore/JSONModel (= 0.2.1)
+  - OptimizelySDKCore/JSONModel (0.2.1):
+    - JSONModel (= 1.3.0)
+  - OptimizelySDKDatafileManager (0.2.1):
+    - OptimizelySDKDatafileManager/JSONModel (= 0.2.1)
+    - OptimizelySDKShared (= 0.2.1)
+  - OptimizelySDKDatafileManager/JSONModel (0.2.1):
+    - JSONModel (= 1.3.0)
+    - OptimizelySDKShared (= 0.2.1)
+  - OptimizelySDKEventDispatcher (0.2.1):
+    - OptimizelySDKEventDispatcher/JSONModel (= 0.2.1)
+    - OptimizelySDKShared (= 0.2.1)
+  - OptimizelySDKEventDispatcher/JSONModel (0.2.1):
+    - JSONModel (= 1.3.0)
+    - OptimizelySDKShared (= 0.2.1)
+  - OptimizelySDKShared (0.2.1):
+    - FMDB (= 2.6.2)
+    - JSONModel (= 1.3.0)
+    - OptimizelySDKCore (= 0.2.1)
+  - OptimizelySDKTVOS (0.2.1):
+    - OptimizelySDKDatafileManager (= 0.2.1)
+    - OptimizelySDKEventDispatcher (= 0.2.1)
+    - OptimizelySDKTVOS/JSONModel (= 0.2.1)
+    - OptimizelySDKUserProfile (= 0.2.1)
+  - OptimizelySDKTVOS/JSONModel (0.2.1):
+    - JSONModel (= 1.3.0)
+    - OptimizelySDKDatafileManager (= 0.2.1)
+    - OptimizelySDKEventDispatcher (= 0.2.1)
+    - OptimizelySDKUserProfile (= 0.2.1)
+  - OptimizelySDKUserProfile (0.2.1):
+    - OptimizelySDKShared (= 0.2.1)
+    - OptimizelySDKUserProfile/JSONModel (= 0.2.1)
+  - OptimizelySDKUserProfile/JSONModel (0.2.1):
+    - JSONModel (= 1.3.0)
+    - OptimizelySDKShared (= 0.2.1)
+
+DEPENDENCIES:
+  - OptimizelySDKTVOS
+
+SPEC CHECKSUMS:
+  JSONModel: 81c06ecf99190a25fa6aafceea5faffa7880868a
+  OptimizelySDKCore: c41e63f52dec8ba8c8dde179e9dc0bd0fe094405
+  OptimizelySDKDatafileManager: 83b79b3dc4b32497eea340e7adcc2edc41184689
+  OptimizelySDKEventDispatcher: 549fba8c6689fdae29b586a9e22be70ee696aeb1
+  OptimizelySDKShared: cd44accdc746191ae2b1cb853e803884da1411f0
+  OptimizelySDKTVOS: 64b686e8e75f61d129dca3a32c63d12107233b7f
+  OptimizelySDKUserProfile: a6fe0ab84d12c09b0b90f5138b8af2bb64d12045
+
+PODFILE CHECKSUM: 8231b60d518615e827fd6d76678a3dfb1dd31ad7
+
+COCOAPODS: 1.1.1
