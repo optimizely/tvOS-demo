@@ -3,7 +3,7 @@
 #endif
 
 #import "OptimizelySDKTVOS.h"
-#import "OPTLYProjectConfig+tvOS.h"
+#import "OPTLYtvOSManagerBuilder.h"
 
 FOUNDATION_EXPORT double OptimizelySDKTVOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char OptimizelySDKTVOSVersionString[];

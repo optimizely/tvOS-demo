@@ -7,6 +7,7 @@
 #import "OPTLYClientBuilder.h"
 #import "OPTLYDatafileManager.h"
 #import "OPTLYDataStore.h"
+#import "OPTLYEventDataStore.h"
 #import "OPTLYFileManager.h"
 #import "OPTLYManager.h"
 #import "OPTLYManagerBuilder.h"

@@ -2,5 +2,5 @@ platform :tvos, '9.0'
 use_frameworks!
 
 target 'Pet-Adopt' do
-	pod 'OptimizelySDKTVOS'
+	pod 'OptimizelySDKTVOS', '0.4.0-alpha2'
 end
