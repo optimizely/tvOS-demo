@@ -25,24 +25,9 @@
     self.eventKey = @"Adopt_Clicked";
     
     // Initialize default Optimizely
-    self.optlyManager = [OPTLYManager initWithBuilderBlock:^(OPTLYManagerBuilder * _Nullable builder) {
+    self.optlyManager = [OPTLYManager initWithBuilder:[OPTLYtvOSManagerBuilder builderWithBlock:^(OPTLYtvOSManagerBuilder * _Nullable builder) {
         builder.projectId = @"8031305992";
-        OPTLYLoggerDefault *logger =  [[OPTLYLoggerDefault alloc] initWithLogLevel:OptimizelyLogLevelAll];
-        builder.logger = logger;
-        builder.datafileManager = [OPTLYDatafileManagerDefault initWithBuilderBlock:^(OPTLYDatafileManagerBuilder * _Nullable builder) {
-            builder.datafileFetchInterval = 120;
-            builder.logger = logger;
-        }];
-        builder.eventDispatcher = [OPTLYEventDispatcherDefault initWithBuilderBlock:^(OPTLYEventDispatcherBuilder * _Nullable builder) {
-            builder.eventDispatcherDispatchTimeout = 10;
-            builder.eventDispatcherDispatchInterval = 10;
-            builder.logger = logger;
-        }];
-        builder.userProfile = [OPTLYUserProfileDefault initWithBuilderBlock:^(OPTLYUserProfileBuilder * _Nullable builder) {
-            builder.logger = logger;
-        }];
-    }];
-    
+    }]];    
     [self.optlyManager initializeClientWithCallback:^(NSError * _Nullable error, OPTLYClient * _Nullable client) {
         
     }];
