@@ -9,7 +9,8 @@
 #import "OPTLYDataStore.h"
 #import "OPTLYEventDataStore.h"
 #import "OPTLYFileManager.h"
-#import "OPTLYManager.h"
+#import "OPTLYManagerBase.h"
+#import "OPTLYManagerBasic.h"
 #import "OPTLYManagerBuilder.h"
 
 FOUNDATION_EXPORT double OptimizelySDKSharedVersionNumber;

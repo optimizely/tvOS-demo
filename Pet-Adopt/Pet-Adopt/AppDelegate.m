@@ -25,12 +25,7 @@
     self.eventKey = @"Adopt_Clicked";
     
     // Initialize default Optimizely
-    self.optlyManager = [OPTLYManager initWithBuilder:[OPTLYtvOSManagerBuilder builderWithBlock:^(OPTLYtvOSManagerBuilder * _Nullable builder) {
-        builder.projectId = @"8031305992";
-    }]];    
-    [self.optlyManager initializeClientWithCallback:^(NSError * _Nullable error, OPTLYClient * _Nullable client) {
-        
-    }];
+    
     
     return YES;
 }

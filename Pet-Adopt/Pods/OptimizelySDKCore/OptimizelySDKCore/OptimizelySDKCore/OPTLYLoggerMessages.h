@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright 2016, Optimizely, Inc. and contributors                        *
+ * Copyright 2017, Optimizely, Inc. and contributors                        *
  *                                                                          *
  * Licensed under the Apache License, Version 2.0 (the "License");          *
  * you may not use this file except in compliance with the License.         *
@@ -15,8 +15,8 @@
  ***************************************************************************/
 
 /*
-    This class contains all the log messages that will be called by the SDK.
-*/
+ This class contains all the log messages that will be called by the SDK.
+ */
 
 #import <Foundation/Foundation.h>
 
@@ -54,6 +54,7 @@ extern NSString *const OPTLYLoggerMessagesDataStoreDatabaseRemoveEventError;
 // warning
 extern NSString *const OPTLYLoggerMessagesDataStoreEventsRemoveAllWarning;
 extern NSString *const OPTLYLoggerMessagesDataStoreDatabaseGetNoEvents;
+extern NSString *const OPTLYLoggerMessagesDataStoreDatabaseRemovingOldEvents;
 
 // File Manager
 // debug
@@ -99,24 +100,31 @@ extern NSString *const OPTLYLoggerMessagesUserIdInvalid;
 extern NSString *const OPTLYLoggerMessagesVariationIdInvalid;
 
 // ---- Event Dispatcher ----
-// debug
-extern NSString *const OPTLYLoggerMessagesEventDispatcherDispatchingConversionEvent;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherDispatchingImpressionEvent;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherEventDispatchFailed;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherEventDispatchSuccess;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushEventsBackoffMaxRetries;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushEventsBackoffSkipRetry;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushEventsNoEvents;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushSavedEventFailure;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushSavedEventRetrievalFailure;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushSavedEventSuccess;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherEventDispatchFlushSavedEventNoEvents;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherNetworkTimerEnabled;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherNetworkTimerDisabled;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherProperties;
+// info
+extern NSString *const OPTLYLoggerMessagesEventDispatcherTrackingEvent;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherActivatingUser;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherTrackingSuccess;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherActivationSuccess;
 // warning
 extern NSString *const OPTLYLoggerMessagesEventDispatcherInvalidInterval;
-extern NSString *const OPTLYLoggerMessagesEventDispatcherInvalidTimeout;
+
+// debug
+extern NSString *const OPTLYLoggerMessagesEventDispatcherProperties;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherNetworkTimerEnabled;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherNetworkTimerDisabled;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushingEvents;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushEventsNoEvents;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushEventsMax;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushingSavedEvents;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherFlushSavedEventsNoEvents;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherDispatchFailed;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherPendingEvent;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherEventSaved;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherRemovedEvent;
+
+// error
+extern NSString *const OPTLYLoggerMessagesEventDispatcherEventNotTracked;
+extern NSString *const OPTLYLoggerMessagesEventDispatcherActivationFailure;
 
 // ---- Live Variables ----
 // info
@@ -128,7 +136,12 @@ extern NSString *const OPTLYLoggerMessagesVariableUnknownForVariableKey;
 // ---- Manager ----
 // error
 extern NSString *const OPTLYLoggerMessagesManagerBuilderNotValid;
+extern NSString *const OPTLYLoggerMessagesManagerDatafileManagerDoesNotConformToOPTLYDatafileManagerProtocol;
+extern NSString *const OPTLYLoggerMessagesManagerErrorHandlerDoesNotConformToOPTLYErrorHandlerProtocol;
+extern NSString *const OPTLYLoggerMessagesManagerEventDispatcherDoesNotConformToOPTLYEventDispatcherProtocol;
+extern NSString *const OPTLYLoggerMessagesManagerLoggerDoesNotConformToOPTLYLoggerProtocol;
 extern NSString *const OPTLYLoggerMessagesManagerMustBeInitializedWithProjectId;
+extern NSString *const OPTLYLoggerMessagesManagerProjectIdCannotBeEmptyString;
 
 // ---- Project Config Getters ----
 // warning
@@ -158,6 +171,13 @@ extern NSString *const OPTLYLoggerMessagesUserProfileVariationNoLongerInDatafile
 // info
 extern NSString *const OPTLYLoggerMessagesExperimentNotRunning;
 extern NSString *const OPTLYLoggerMessagesFailAudienceTargeting;
+
+// ---- HTTP Request Manager ----
+// Debug (not through logger handler)
+extern NSString *const OPTLYHTTPRequestManagerGETWithParametersAttempt;
+extern NSString *const OPTLYHTTPRequestManagerGETIfModifiedSince;
+extern NSString *const OPTLYHTTPRequestManagerPOSTWithParameters;
+extern NSString *const OPTLYHTTPRequestManagerBackoffRetryStates;
 
 @interface OPTLYLoggerMessages : NSObject
 

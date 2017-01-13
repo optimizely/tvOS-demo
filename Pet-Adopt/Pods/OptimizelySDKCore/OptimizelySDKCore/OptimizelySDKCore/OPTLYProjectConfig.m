@@ -48,8 +48,8 @@ NSString * const kExpectedDatafileVersion  = @"3";
 
 @implementation OPTLYProjectConfig
 
-+ (nullable instancetype)initWithBuilderBlock:(nonnull OPTLYProjectConfigBuilderBlock)block {
-    return [[self alloc] initWithBuilder:[OPTLYProjectConfigBuilder builderWithBlock:block]];
++ (nullable instancetype)init:(nonnull OPTLYProjectConfigBuilderBlock)builderBlock {
+    return [[self alloc] initWithBuilder:[OPTLYProjectConfigBuilder builderWithBlock:builderBlock]];
 }
 
 - (instancetype)initWithBuilder:(OPTLYProjectConfigBuilder *)builder {
@@ -133,7 +133,7 @@ NSString * const kExpectedDatafileVersion  = @"3";
 }
 
 - (nullable instancetype)initWithDatafile:(nonnull NSData *)datafile {
-    return [OPTLYProjectConfig initWithBuilderBlock:^(OPTLYProjectConfigBuilder * _Nullable builder) {
+    return [OPTLYProjectConfig init:^(OPTLYProjectConfigBuilder * _Nullable builder) {
         builder.datafile = datafile;
     }];
 }
@@ -417,4 +417,30 @@ NSString * const kExpectedDatafileVersion  = @"3";
     return variation;
 }
 
+# pragma mark - Whitelisting
+// check if the user is in the whitelisted mapping
+- (BOOL)checkWhitelistingForUser:(NSString *)userId experiment:(OPTLYExperiment *)experiment {
+    if (experiment.forcedVariations[userId] != nil) {
+        return true;
+    }
+    return false;
+}
+
+// get the variation the user was whitelisted into
+- (OPTLYVariation *)getWhitelistedVariationForUser:(NSString *)userId experiment:(OPTLYExperiment *)experiment {
+    NSString *forcedVariationKey = experiment.forcedVariations[userId];
+    OPTLYVariation *forcedVariation = [experiment getVariationForVariationKey:forcedVariationKey];
+    if (forcedVariation != nil) {
+        // Log user forced into variation
+        NSString *logMessage = [NSString stringWithFormat:OPTLYLoggerMessagesForcedVariationUser, userId, forcedVariation.variationId];
+        [self.logger logMessage:logMessage withLevel:OptimizelyLogLevelInfo];
+    }
+    else {
+        // Log error: variation not in datafile not activating user
+        [OPTLYErrorHandler handleError:self.errorHandler
+                                  code:OPTLYErrorTypesDataUnknown
+                           description:NSLocalizedString(OPTLYErrorHandlerMessagesVariationUnknown, variationId)];
+    }
+    return forcedVariation;
+}
 @end

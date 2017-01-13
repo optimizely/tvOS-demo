@@ -1,54 +1,54 @@
 PODS:
   - JSONModel (1.3.0)
-  - OptimizelySDKCore (0.4.0-alpha3):
-    - OptimizelySDKCore/JSONModel (= 0.4.0-alpha3)
-  - OptimizelySDKCore/JSONModel (0.4.0-alpha3):
+  - OptimizelySDKCore (0.4.0-alpha4):
+    - OptimizelySDKCore/JSONModel (= 0.4.0-alpha4)
+  - OptimizelySDKCore/JSONModel (0.4.0-alpha4):
     - JSONModel (= 1.3.0)
-  - OptimizelySDKDatafileManager (0.4.0-alpha2):
-    - OptimizelySDKDatafileManager/JSONModel (= 0.4.0-alpha2)
-    - OptimizelySDKShared (= 0.4.0-alpha3)
-  - OptimizelySDKDatafileManager/JSONModel (0.4.0-alpha2):
+  - OptimizelySDKDatafileManager (0.4.0-alpha3):
+    - OptimizelySDKDatafileManager/JSONModel (= 0.4.0-alpha3)
+    - OptimizelySDKShared (= 0.4.0-alpha4)
+  - OptimizelySDKDatafileManager/JSONModel (0.4.0-alpha3):
     - JSONModel (= 1.3.0)
-    - OptimizelySDKShared (= 0.4.0-alpha3)
-  - OptimizelySDKEventDispatcher (0.4.0-alpha2):
-    - OptimizelySDKEventDispatcher/JSONModel (= 0.4.0-alpha2)
-    - OptimizelySDKShared (= 0.4.0-alpha3)
-  - OptimizelySDKEventDispatcher/JSONModel (0.4.0-alpha2):
+    - OptimizelySDKShared (= 0.4.0-alpha4)
+  - OptimizelySDKEventDispatcher (0.4.0-alpha3):
+    - OptimizelySDKEventDispatcher/JSONModel (= 0.4.0-alpha3)
+    - OptimizelySDKShared (= 0.4.0-alpha4)
+  - OptimizelySDKEventDispatcher/JSONModel (0.4.0-alpha3):
     - JSONModel (= 1.3.0)
-    - OptimizelySDKShared (= 0.4.0-alpha3)
-  - OptimizelySDKShared (0.4.0-alpha3):
+    - OptimizelySDKShared (= 0.4.0-alpha4)
+  - OptimizelySDKShared (0.4.0-alpha4):
     - FMDB (= 2.6.2)
     - JSONModel (= 1.3.0)
-    - OptimizelySDKCore (= 0.4.0-alpha3)
-  - OptimizelySDKTVOS (0.4.0-alpha2):
-    - OptimizelySDKDatafileManager (= 0.4.0-alpha2)
-    - OptimizelySDKEventDispatcher (= 0.4.0-alpha2)
-    - OptimizelySDKTVOS/JSONModel (= 0.4.0-alpha2)
-    - OptimizelySDKUserProfile (= 0.4.0-alpha2)
-  - OptimizelySDKTVOS/JSONModel (0.4.0-alpha2):
+    - OptimizelySDKCore (= 0.4.0-alpha4)
+  - OptimizelySDKTVOS (0.4.0-alpha3):
+    - OptimizelySDKDatafileManager (= 0.4.0-alpha3)
+    - OptimizelySDKEventDispatcher (= 0.4.0-alpha3)
+    - OptimizelySDKTVOS/JSONModel (= 0.4.0-alpha3)
+    - OptimizelySDKUserProfile (= 0.4.0-alpha3)
+  - OptimizelySDKTVOS/JSONModel (0.4.0-alpha3):
     - JSONModel (= 1.3.0)
-    - OptimizelySDKDatafileManager (= 0.4.0-alpha2)
-    - OptimizelySDKEventDispatcher (= 0.4.0-alpha2)
-    - OptimizelySDKUserProfile (= 0.4.0-alpha2)
-  - OptimizelySDKUserProfile (0.4.0-alpha2):
-    - OptimizelySDKShared (= 0.4.0-alpha3)
-    - OptimizelySDKUserProfile/JSONModel (= 0.4.0-alpha2)
-  - OptimizelySDKUserProfile/JSONModel (0.4.0-alpha2):
+    - OptimizelySDKDatafileManager (= 0.4.0-alpha3)
+    - OptimizelySDKEventDispatcher (= 0.4.0-alpha3)
+    - OptimizelySDKUserProfile (= 0.4.0-alpha3)
+  - OptimizelySDKUserProfile (0.4.0-alpha3):
+    - OptimizelySDKShared (= 0.4.0-alpha4)
+    - OptimizelySDKUserProfile/JSONModel (= 0.4.0-alpha3)
+  - OptimizelySDKUserProfile/JSONModel (0.4.0-alpha3):
     - JSONModel (= 1.3.0)
-    - OptimizelySDKShared (= 0.4.0-alpha3)
+    - OptimizelySDKShared (= 0.4.0-alpha4)
 
 DEPENDENCIES:
-  - OptimizelySDKTVOS (= 0.4.0-alpha2)
+  - OptimizelySDKTVOS (= 0.4.0-alpha3)
 
 SPEC CHECKSUMS:
   JSONModel: 81c06ecf99190a25fa6aafceea5faffa7880868a
-  OptimizelySDKCore: b26bc8bf890f9b4ce7e9bf16a016cc5c023530f3
-  OptimizelySDKDatafileManager: 9bec06db2642da86ac1ad4fb4096d5dca59bc039
-  OptimizelySDKEventDispatcher: 3a56edeb6b5c92a8d8c475c7825a598295bf969f
-  OptimizelySDKShared: c2d4455f555471e1c2c660d2c67662aa999ce90d
-  OptimizelySDKTVOS: 1651a8eff831434b40f78da3d7a4534bcd2bdf9f
-  OptimizelySDKUserProfile: 7cb678edc50e97f880b90263d1edcacc87a5504d
+  OptimizelySDKCore: 5c4a9e4b888194132cf5535c580763ca59e83469
+  OptimizelySDKDatafileManager: 899b629307897abe46cc9fcedaf7b93766078f54
+  OptimizelySDKEventDispatcher: 6ffcb1d1b8638210a35076db5ccd8abc231d7c27
+  OptimizelySDKShared: 2011d6387738617a0a341efae563fc76a71320dd
+  OptimizelySDKTVOS: 41bab9e46be230cda91fe29e1af855bf3f7816d8
+  OptimizelySDKUserProfile: 705f79008cc8899ae024fb917bfb88a9fee8e31c
 
-PODFILE CHECKSUM: e5b5c81e302d92f2fed0a7607292b45c8a99771e
+PODFILE CHECKSUM: 74a9e97e7e82e4d39ada2731d13c4e43bdc3af13
 
 COCOAPODS: 1.1.1
